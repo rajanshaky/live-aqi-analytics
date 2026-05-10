@@ -1,0 +1,15 @@
+============================== 
+Run Time: 10-05-2026 22:23:44.65 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi dominant_pollutant                  timestamp
+0      Delhi  102               pm25 2026-05-10 22:23:45.903118
+1     Mumbai  137               pm25 2026-05-10 22:23:46.546331
+2  Bangalore   95               pm25 2026-05-10 22:23:47.168825
+3  Hyderabad  114               pm25 2026-05-10 22:23:47.805360
+4    Chennai   24               pm25 2026-05-10 22:23:48.393844
+Rows inserted: 25
+Data inserted successfully!
