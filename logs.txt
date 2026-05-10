@@ -13,3 +13,33 @@ No data for Sitapur
 4    Chennai   24               pm25 2026-05-10 22:23:48.393844
 Rows inserted: 25
 Data inserted successfully!
+============================== 
+Run Time: 11-05-2026  1:42:28.46 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi dominant_pollutant                  timestamp
+0      Delhi  102               pm25 2026-05-11 01:42:30.264730
+1     Mumbai  137               pm25 2026-05-11 01:42:30.842393
+2  Bangalore   93               pm25 2026-05-11 01:42:31.451805
+3  Hyderabad  116               pm25 2026-05-11 01:42:32.051878
+4    Chennai   11               pm10 2026-05-11 01:42:32.637121
+Rows inserted: 25
+Data inserted successfully!
+============================== 
+Run Time: 11-05-2026  1:52:03.77 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi dominant_pollutant                  timestamp
+0      Delhi  102               pm25 2026-05-11 01:52:05.054312
+1     Mumbai  137               pm25 2026-05-11 01:52:05.630459
+2  Bangalore   93               pm25 2026-05-11 01:52:06.212845
+3  Hyderabad  116               pm25 2026-05-11 01:52:06.822246
+4    Chennai   11               pm10 2026-05-11 01:52:07.456008
+Rows inserted: 25
+Data inserted successfully!
