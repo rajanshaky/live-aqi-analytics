@@ -50,11 +50,18 @@ def fetch_data():
         data = response.json()
 
         if data["status"] == "ok":
+            iaqi = data["data"].get("iaqi", {})
 
             records.append({
                 "city": city,
-                "aqi": data["data"]["aqi"],
-                "dominant_pollutant": data["data"]["dominentpol"],
+                "aqi": data["data"].get("aqi"),
+                "pm25": iaqi.get("pm25", {}).get("v"),
+                "pm10": iaqi.get("pm10", {}).get("v"),
+                "o3": iaqi.get("o3", {}).get("v"),
+                "no2": iaqi.get("no2", {}).get("v"),
+                "so2": iaqi.get("so2", {}).get("v"),
+                "co": iaqi.get("co", {}).get("v"),
+
                 "timestamp": datetime.now()
             })
 

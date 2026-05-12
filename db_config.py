@@ -19,8 +19,10 @@ def load_to_mysql(df):
         print(f"Rows inserted: {len(df)}")
 
         query = """
-        INSERT INTO aqi_data (city, aqi, dominant_pollutant)
-        VALUES (%s, %s, %s)
+        INSERT INTO aqi_data (
+            city, aqi, pm25, pm10, o3, no2, so2, co, timestamp
+        )
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
         """
 
         for _, row in df.iterrows():
@@ -28,7 +30,13 @@ def load_to_mysql(df):
             cursor.execute(query, (
                 row['city'],
                 row['aqi'],
-                row['dominant_pollutant']
+                row['pm25'],
+                row['pm10'],
+                row['o3'],
+                row['no2'],
+                row['so2'],
+                row['co'],
+                row['timestamp']
             ))
 
         conn.commit()
