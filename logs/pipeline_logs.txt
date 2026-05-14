@@ -388,3 +388,391 @@ No data for Sitapur
 4    Chennai    9     3   9.0   6.9   4.7   2.8  5.2 2026-05-12 18:26:10.018614
 Rows inserted: 25
 Data inserted successfully!
+============================== 
+Run Time: 12-05-2026 23:46:47.60 
+C:\Users\shaky\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'D:\\Games\\New folder (2)\\Projects\\live_aqi_analytics\\app.py': [Errno 2] No such file or directory
+============================== 
+Run Time: 12-05-2026 23:46:53.12 
+C:\Users\shaky\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'D:\\Games\\New folder (2)\\Projects\\live_aqi_analytics\\app.py': [Errno 2] No such file or directory
+============================== 
+Run Time: 12-05-2026 23:47:02.80 
+C:\Users\shaky\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'D:\\Games\\New folder (2)\\Projects\\live_aqi_analytics\\app.py': [Errno 2] No such file or directory
+============================== 
+Run Time: 12-05-2026 23:47:22.73 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+============================== 
+Run Time: 12-05-2026 23:47:59.39 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+============================== 
+Run Time: 12-05-2026 23:48:16.94 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+============================== 
+Run Time: 12-05-2026 23:50:10.31 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+ 
+============================== 
+Run Time: 12-05-2026 23:51:45.77 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+ 
+============================== 
+Run Time: 12-05-2026 23:53:12.11 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+ 
+============================== 
+Run Time: 12-05-2026 23:57:47.55 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+ 
+============================== 
+Run Time: 12-05-2026 23:58:09.35 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+ 
+============================== 
+Run Time: 13-05-2026  1:10:44.96 
+============================== 
+Run Time: 13-05-2026  1:14:30.17 
+============================== 
+Run Time: 13-05-2026  1:14:54.74 
+============================== 
+Run Time: 13-05-2026  1:15:13.00 
+============================== 
+Run Time: 13-05-2026  1:15:39.32 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  122   122  90.0   6.7  30.7  11.5  0.1 2026-05-13 01:15:40.590316
+1     Mumbai   71    71  45.0  11.6   2.5  11.9  2.9 2026-05-13 01:15:41.168831
+2  Bangalore   93    93  59.0  19.4  11.6   3.8  1.3 2026-05-13 01:15:41.767808
+3  Hyderabad  120   120  66.0   4.5   6.0   8.3  1.9 2026-05-13 01:15:42.532361
+4    Chennai    7     3   6.0   6.8   4.7   2.4  4.2 2026-05-13 01:15:43.374724
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026  1:16:40.14 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  122   122  90.0   6.7  30.7  11.5  0.1 2026-05-13 01:16:41.373372
+1     Mumbai   71    71  45.0  11.6   2.5  11.9  2.9 2026-05-13 01:16:41.994498
+2  Bangalore   93    93  59.0  19.4  11.6   3.8  1.3 2026-05-13 01:16:42.582566
+3  Hyderabad  120   120  66.0   4.5   6.0   8.3  1.9 2026-05-13 01:16:43.188991
+4    Chennai    7     3   6.0   6.8   4.7   2.4  4.2 2026-05-13 01:16:43.901351
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026  1:17:19.42 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  122   122  90.0   6.7  30.7  11.5  0.1 2026-05-13 01:17:20.675273
+1     Mumbai   71    71  45.0  11.6   2.5  11.9  2.9 2026-05-13 01:17:21.304843
+2  Bangalore   93    93  59.0  19.4  11.6   3.8  1.3 2026-05-13 01:17:21.913124
+3  Hyderabad  120   120  66.0   4.5   6.0   8.3  1.9 2026-05-13 01:17:22.510666
+4    Chennai    7     3   6.0   6.8   4.7   2.4  4.2 2026-05-13 01:17:23.108651
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026  5:02:25.50 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  157   157  92.0   5.3  20.5  10.0  0.1 2026-05-13 05:02:29.004816
+1     Mumbai   79    79  52.0  11.7   2.3  11.9  2.6 2026-05-13 05:02:29.603200
+2  Bangalore   95    95  51.0  19.7   7.6   3.9  1.8 2026-05-13 05:02:30.211087
+3  Hyderabad  112   112  66.0   3.6   5.9   8.1  1.9 2026-05-13 05:02:30.797824
+4    Chennai   55    55  36.0   6.8   5.2   2.5  4.9 2026-05-13 05:02:31.451848
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026  5:05:16.92 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  157   157  92.0   5.3  20.5  10.0  0.1 2026-05-13 05:05:18.148153
+1     Mumbai   79    79  52.0  11.7   2.3  11.9  2.6 2026-05-13 05:05:18.777110
+2  Bangalore   95    95  51.0  19.7   7.6   3.9  1.8 2026-05-13 05:05:19.421478
+3  Hyderabad  112   112  66.0   3.6   5.9   8.1  1.9 2026-05-13 05:05:20.004194
+4    Chennai   55    55  36.0   6.8   5.2   2.5  4.9 2026-05-13 05:05:20.632014
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 15:37:18.15 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  126   126   84.0  ...  12.5   8.6  2.8 2026-05-13 15:37:22.440061
+1     Mumbai  162   162  110.0  ...   2.2  11.9  2.4 2026-05-13 15:37:23.040099
+2  Bangalore  118   118   61.0  ...  11.1   3.0  1.4 2026-05-13 15:37:23.646689
+3  Hyderabad  103   103   62.0  ...   6.0   8.3  2.3 2026-05-13 15:37:24.303942
+4    Chennai   24     3   24.0  ...   5.6   2.4  3.9 2026-05-13 15:37:24.915797
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 16:26:06.04 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  122   122   90.0  ...  12.5   7.7  2.6 2026-05-13 16:26:11.756779
+1     Mumbai  164   164  116.0  ...   2.1  11.9  2.1 2026-05-13 16:26:13.608503
+2  Bangalore  118   118   63.0  ...  11.1   2.9  1.3 2026-05-13 16:26:15.297657
+3  Hyderabad  101   101   62.0  ...   6.0   8.3  2.2 2026-05-13 16:26:17.180928
+4    Chennai   16     6   16.0  ...   5.2   2.3  4.3 2026-05-13 16:26:19.036809
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 17:26:05.95 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  122   122   88.0  ...  10.3   6.9  2.6 2026-05-13 17:26:10.470506
+1     Mumbai  157   157  101.0  ...   2.2  11.9  2.4 2026-05-13 17:26:11.163865
+2  Bangalore  117   117   64.0  ...  11.1   2.7  1.9 2026-05-13 17:26:11.854171
+3  Hyderabad  101   101   62.0  ...   6.1   8.2  2.2 2026-05-13 17:26:12.537958
+4    Chennai   16     6   16.0  ...   5.2   2.3  4.3 2026-05-13 17:26:13.271552
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 18:26:05.89 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  139   139  98.0  16.5  10.5   6.8  3.1 2026-05-13 18:26:07.572747
+1     Mumbai  153   153  91.0  11.7   2.4  11.9  2.7 2026-05-13 18:26:08.250671
+2  Bangalore  109   109  66.0  25.9  14.9   2.5  2.6 2026-05-13 18:26:08.924097
+3  Hyderabad   97    97  65.0  12.6   5.9   8.0  3.0 2026-05-13 18:26:09.610961
+4    Chennai   18    18  16.0   7.1   6.3   2.2  4.5 2026-05-13 18:26:10.304708
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 19:26:05.99 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  126   126  103.0  ...  31.1   5.8  4.2 2026-05-13 19:26:07.852226
+1     Mumbai  155   155   95.0  ...   2.3  11.9  2.4 2026-05-13 19:26:08.477040
+2  Bangalore  128   128   69.0  ...  23.2   5.2  5.1 2026-05-13 19:26:09.073906
+3  Hyderabad   96    96   64.0  ...   6.0   7.9  6.2 2026-05-13 19:26:09.736679
+4    Chennai   18    18   16.0  ...   6.3   2.2  4.5 2026-05-13 19:26:10.327606
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 20:26:05.89 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  129   129  115.0  ...  69.7   6.2  7.5 2026-05-13 20:26:07.554879
+1     Mumbai  149   149   85.0  ...   2.2  11.9  2.5 2026-05-13 20:26:08.208351
+2  Bangalore  152   152   79.0  ...  39.9  16.9  8.1 2026-05-13 20:26:08.782769
+3  Hyderabad  118   118   65.0  ...   5.9   8.0  9.2 2026-05-13 20:26:09.384789
+4    Chennai   31    31   16.0  ...   5.0   2.0  4.5 2026-05-13 20:26:09.988266
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 21:26:05.90 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  154   154  134.0  ...  20.7   6.3  3.3 2026-05-13 21:26:07.769238
+1     Mumbai  122   122   73.0  ...   2.2  11.8  2.5 2026-05-13 21:26:08.378170
+2  Bangalore  151   151   91.0  ...  46.2  11.2  7.8 2026-05-13 21:26:08.967540
+3  Hyderabad  128   128   65.0  ...   5.9   8.1  5.5 2026-05-13 21:26:09.621995
+4    Chennai   15    15   12.0  ...   5.5   2.3  4.7 2026-05-13 21:26:10.285076
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 13-05-2026 23:37:43.37 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi   73    63  73.0   3.5  30.4   5.4  2.8 2026-05-13 23:37:45.016770
+1     Mumbai  109   109  67.0  11.6   2.3  11.9  2.7 2026-05-13 23:37:45.613523
+2  Bangalore  151   151  94.0  13.2  25.0   4.1  2.0 2026-05-13 23:37:46.243175
+3  Hyderabad  129   129  67.0   5.7   6.1   8.2  4.7 2026-05-13 23:37:46.950218
+4    Chennai    7     3   6.0   6.9   4.4   2.4  4.2 2026-05-13 23:37:47.606698
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 14-05-2026  0:26:05.89 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  111    75  111.0  ...   9.6   5.5  1.0 2026-05-14 00:26:07.126453
+1     Mumbai   82    82   53.0  ...   2.5  11.9  2.9 2026-05-14 00:26:07.744675
+2  Bangalore  151   151   80.0  ...  14.6   3.2  0.6 2026-05-14 00:26:08.338040
+3  Hyderabad  121   121   67.0  ...   5.8   8.2  3.9 2026-05-14 00:26:08.949384
+4    Chennai    7     3    4.0  ...   5.6   2.7  4.3 2026-05-14 00:26:09.538559
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 14-05-2026  0:37:43.42 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  111    75  111.0  ...   9.6   5.5  1.0 2026-05-14 00:37:44.743387
+1     Mumbai   79    79   52.0  ...   2.4  11.9  2.9 2026-05-14 00:37:45.342637
+2  Bangalore  150   150   77.0  ...  13.7   2.9  1.2 2026-05-14 00:37:45.932380
+3  Hyderabad  122   122   67.0  ...   5.9   8.2  3.7 2026-05-14 00:37:46.553621
+4    Chennai    7     3    4.0  ...   5.6   2.7  4.3 2026-05-14 00:37:47.189186
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 14-05-2026  1:26:06.02 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi   84    73  84.0  12.2  14.6   6.1  0.5 2026-05-14 01:26:10.267696
+1     Mumbai   78    78  51.0  11.7   2.5  11.9  2.9 2026-05-14 01:26:10.865529
+2  Bangalore  128   128  62.0  22.0   9.0   2.2  2.0 2026-05-14 01:26:11.471969
+3  Hyderabad  124   124  68.0   5.8   6.0   8.1  3.1 2026-05-14 01:26:12.039665
+4    Chennai   60    60  24.0   8.1   4.7   2.7  5.0 2026-05-14 01:26:12.611825
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 14-05-2026  2:26:05.88 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  105   105  56.0   5.1  20.7   4.7  0.5 2026-05-14 02:26:07.161652
+1     Mumbai   95    95  60.0  11.6   2.3  11.9  2.7 2026-05-14 02:26:07.760638
+2  Bangalore   99    99  56.0  18.5   7.4   2.1  1.6 2026-05-14 02:26:08.658386
+3  Hyderabad  114   114  67.0   6.1   5.8   8.1  2.7 2026-05-14 02:26:09.527441
+4    Chennai  161   161  83.0  11.4   5.6   2.4  8.7 2026-05-14 02:26:10.337878
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 14-05-2026 23:56:16.77 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2    co                  timestamp
+0      Delhi  104   104  104.0  ...  31.8   5.9   2.5 2026-05-14 23:56:20.284171
+1     Mumbai  112   112   68.0  ...   2.3  11.9   2.6 2026-05-14 23:56:20.882790
+2  Bangalore  159   159  104.0  ...  22.0   4.4   3.2 2026-05-14 23:56:21.466533
+3  Hyderabad  129   129   68.0  ...   7.5   8.1   4.0 2026-05-14 23:56:22.072365
+4    Chennai  175   175  101.0  ...   4.7   2.4  10.4 2026-05-14 23:56:22.661048
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 15-05-2026  0:26:06.02 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2    co                  timestamp
+0      Delhi  102    91  102.0  ...  18.5   5.7   1.9 2026-05-15 00:26:10.524548
+1     Mumbai   83    83   54.0  ...   2.6  11.9   3.1 2026-05-15 00:26:11.311737
+2  Bangalore  156   156   89.0  ...  18.9   4.3   2.1 2026-05-15 00:26:12.025053
+3  Hyderabad  117   117   67.0  ...   7.8   8.0   3.5 2026-05-15 00:26:12.745487
+4    Chennai  172   172   97.0  ...   5.3   1.9  10.7 2026-05-15 00:26:13.456550
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
+============================== 
+Run Time: 15-05-2026  1:26:05.87 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25   pm10  ...   no2   so2   co                  timestamp
+0      Delhi  124   111  124.0  ...  12.6   5.9  1.4 2026-05-15 01:26:07.087294
+1     Mumbai   74    74   48.0  ...   2.3  11.8  2.6 2026-05-15 01:26:07.670599
+2  Bangalore  143   143   73.0  ...  12.8   4.7  2.4 2026-05-15 01:26:08.279212
+3  Hyderabad  116   116   67.0  ...   7.5   7.9  2.2 2026-05-15 01:26:08.883964
+4    Chennai  173   173   98.0  ...   5.1   2.1  9.1 2026-05-15 01:26:09.550280
+
+[5 rows x 9 columns]
+Rows inserted: 25
+Data inserted successfully!
+ 
