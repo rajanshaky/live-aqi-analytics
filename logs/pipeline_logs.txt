@@ -1014,3 +1014,19 @@ No data for Sitapur
 Rows inserted: 25
 Data inserted successfully!
  
+============================== 
+Run Time: 16-05-2026  2:26:06.03 
+No data for Surat
+No data for Indore
+No data for Vizag
+No data for Ranchi
+No data for Sitapur
+        city  aqi  pm25  pm10    o3   no2   so2   co                  timestamp
+0      Delhi  140   140  92.0   6.4  53.0   9.0  0.8 2026-05-16 02:26:10.255741
+1     Mumbai   47    47  24.0  11.6   2.2  11.9  2.3 2026-05-16 02:26:11.093005
+2  Bangalore  168   168  67.0  16.9  10.9   3.1  3.0 2026-05-16 02:26:11.784104
+3  Hyderabad  140   140  71.0   6.3   5.1   8.3  4.8 2026-05-16 02:26:12.475931
+4    Chennai   63    63  35.0  13.2   4.8   2.1  9.3 2026-05-16 02:26:13.182487
+Rows inserted: 25
+Data inserted successfully!
+ 

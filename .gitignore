@@ -1,12 +1,35 @@
+# Virtual Environments
 .venv/
 venv/
+
+# Python Cache
 __pycache__/
 *.pyc
 *.pyo
+
+# Environment Variables
 .env
+
+# Build Files
 *.egg-info/
 dist/
 build/
+
+# OS Files
 .DS_Store
+Thumbs.db
+
+# Logs
 logs/
-*.log
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Power BI temp files
+*.pbix.autosave
+
+# MySQL dumps
+*.sql.zip
