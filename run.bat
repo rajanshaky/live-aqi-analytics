@@ -9,4 +9,4 @@ echo Run Time: %date% %time% >> logs\pipeline_logs.txt
 
 .venv\Scripts\python.exe main.py >> logs\pipeline_logs.txt 2>&1
 
-echo. >> logs\pipeline_logs.txt
+echo. >> logs\pipeline_logs.txt 
