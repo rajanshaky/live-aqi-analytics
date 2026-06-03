@@ -1,11 +1,15 @@
 import mysql.connector
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def connect_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="2002",
-        database="aqi_db",
+        host=os.getenv('MYSQL_HOST'),
+        user=os.getenv('MYSQL_USER'),
+        password=os.getenv('MYSQL_PASSWORD'),
+        database=os.getenv('MYSQL_DATABASE'),
         use_pure=True
     )
 

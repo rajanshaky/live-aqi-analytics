@@ -1,8 +1,12 @@
 import requests
 import pandas as pd
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
-API_KEY = "6bf9d4558a5a9ff8df8fe769ae89ea172d1aee4c"
+load_dotenv()
+
+API_KEY = os.getenv('OPENAQ_API_KEY')
 
 def fetch_data():
 
