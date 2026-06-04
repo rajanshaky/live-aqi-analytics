@@ -176,11 +176,11 @@ st.markdown("""
 @st.cache_resource
 def get_connection():
     return mysql.connector.connect(
-        host=os.getenv('MYSQL_HOST'),
-        port=int(os.getenv('MYSQL_PORT', 3306)),
-        user=os.getenv('MYSQL_USER'),
-        password=os.getenv('MYSQL_PASSWORD'),
-        database=os.getenv('MYSQL_DATABASE'),
+        host=os.getenv('RAILWAY_MYSQL_HOST'),
+        port=int(os.getenv('RAILWAY_MYSQL_PORT', 3306)),
+        user=os.getenv('RAILWAY_MYSQL_USER'),
+        password=os.getenv('RAILWAY_MYSQL_PASSWORD'),
+        database=os.getenv('RAILWAY_MYSQL_DATABASE'),
         use_pure=True
     )
 
