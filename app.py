@@ -176,10 +176,11 @@ st.markdown("""
 @st.cache_resource
 def get_connection():
     return mysql.connector.connect(
-        host=os.getenv('MYSQL_HOST', 'localhost'),
-        user=os.getenv('MYSQL_USER', 'root'),
-        password=os.getenv('MYSQL_PASSWORD', ''),
-        database=os.getenv('MYSQL_DATABASE', 'aqi_db'),
+        host=os.getenv('MYSQL_HOST'),
+        port=int(os.getenv('MYSQL_PORT', 3306)),
+        user=os.getenv('MYSQL_USER'),
+        password=os.getenv('MYSQL_PASSWORD'),
+        database=os.getenv('MYSQL_DATABASE'),
         use_pure=True
     )
 
@@ -375,7 +376,7 @@ if page == "📊 Monitoring Overview":
 
     trend_df = (
         df.set_index('timestamp')['aqi']
-        .resample('12h')
+        .resample('1h')
         .mean()
         .dropna()
         .reset_index()
@@ -548,3 +549,4 @@ elif page == "🔬 Pattern Exploration":
     )
     fig_hourly.update_xaxes(tickmode='linear', tick0=0, dtick=5, gridcolor='#2a2a4a')
     st.plotly_chart(fig_hourly, use_container_width=True)
+    
