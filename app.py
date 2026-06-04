@@ -375,7 +375,7 @@ if page == "📊 Monitoring Overview":
 
     trend_df = (
         df.set_index('timestamp')['aqi']
-        .resample('D')
+        .resample('12h')
         .mean()
         .dropna()
         .reset_index()
