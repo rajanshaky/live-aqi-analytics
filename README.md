@@ -1,40 +1,50 @@
 # 🌍 Live AQI & Pollutant Analysis Dashboard
 
-A real-time Air Quality Index (AQI) monitoring and analytics system built using Python, MySQL, and Power BI.
+[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-brightgreen)](https://live-aqi-analytics.streamlit.app)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://python.org)
+[![MySQL](https://img.shields.io/badge/MySQL-Railway-orange)](https://railway.app)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)](https://streamlit.io)
 
-This project automatically collects air quality data for major Indian cities, stores it in a MySQL database through an automated ETL pipeline, and visualizes insights through an interactive multi-page Power BI dashboard.
+A real-time Air Quality Index (AQI) monitoring and analytics system built using Python, MySQL, Power BI, and Streamlit.
+
+This project automatically collects air quality data for 25+ major Indian cities, stores it in a cloud MySQL database through an automated ETL pipeline, and visualizes insights through both a Power BI dashboard and a live publicly accessible Streamlit dashboard.
+
+🔗 **Live Dashboard:** [live-aqi-analytics.streamlit.app](https://live-aqi-analytics.streamlit.app)
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 The goal of this project is to:
 
 * Monitor live AQI trends across Indian cities
 * Analyze pollutant intensity patterns
 * Automate data collection and storage
-* Build a professional analytics dashboard for environmental monitoring
+* Build professional analytics dashboards for environmental monitoring
 * Demonstrate end-to-end data analytics workflow
 
-The system continuously fetches AQI and pollutant data using a public API, stores the processed data into MySQL, and visualizes the results using Power BI.
+The system continuously fetches AQI and pollutant data using the WAQI public API, stores the processed data into a cloud MySQL database on Railway, and visualizes the results through two layers:
+- **Power BI** — for rich, interactive BI dashboard development
+- **Streamlit + Plotly** — for live public deployment accessible to anyone
 
 ---
 
-# ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 | Category        | Technologies                          |
 | --------------- | ------------------------------------- |
 | Programming     | Python                                |
-| Database        | MySQL                                 |
+| Database        | MySQL (Railway Cloud)                 |
 | Data Processing | Pandas                                |
-| API Handling    | Requests                              |
-| Visualization   | Power BI                              |
+| API Handling    | Requests (WAQI API)                   |
+| Visualization   | Power BI, Streamlit, Plotly           |
+| Deployment      | Streamlit Cloud + Railway             |
 | Automation      | Windows Task Scheduler + Batch Script |
 | Environment     | Virtual Environment (.venv)           |
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```bash
 live_aqi_analytics/
@@ -51,252 +61,189 @@ live_aqi_analytics/
 ├── .env.example
 ├── .gitignore
 │
-├── data_pipeline.py
-├── db_config.py
-├── main.py
+├── app.py                  ← Streamlit dashboard
+├── data_pipeline.py        ← API fetch + transform
+├── db_config.py            ← MySQL connection + load
+├── main.py                 ← Pipeline entry point
 │
+├── dashboard.pbix  ← Power BI dashboard file
 ├── schema.sql
 ├── requirements.txt
 ├── run.bat
-├── README.md
-│
-└── powerbi_dashboard.pbix
+└── README.md
 ```
 
 ---
 
-# 🔄 ETL Pipeline Workflow
+## 🔄 ETL Pipeline Workflow
 
-## 1. Extract
+```
+WAQI REST API
+      ↓
+Python (fetch + transform)
+      ↓
+MySQL on Railway (cloud database)
+      ↓
+Power BI Dashboard (.pbix)
+      +
+Streamlit Dashboard (live-aqi-analytics.streamlit.app)
+```
 
-The Python pipeline fetches live AQI data from an external AQI API for multiple Indian cities.
+### 1. Extract
+The Python pipeline fetches live AQI data from the WAQI API for 25+ Indian cities.
 
-Collected metrics include:
+Collected metrics:
+* AQI, PM2.5, PM10, NO2, O3, SO2, CO, Timestamp
 
-* AQI
-* PM2.5
-* PM10
-* NO2
-* O3
-* SO2
-* CO
-* Timestamp
-
----
-
-## 2. Transform
-
-The fetched JSON data is cleaned and transformed using Pandas.
-
-Processing includes:
-
+### 2. Transform
+The fetched JSON data is cleaned and transformed using Pandas:
 * Filtering missing values
 * Structuring pollutant columns
 * Timestamp formatting
 * Creating analytics-ready datasets
 
----
-
-## 3. Load
-
-The processed data is inserted into a MySQL database using `mysql-connector-python`.
-
-The pipeline runs automatically through Windows Task Scheduler.
+### 3. Load
+The processed data is inserted into a cloud MySQL database on Railway using `mysql-connector-python`. The pipeline runs automatically through Windows Task Scheduler.
 
 ---
 
-# 🗄️ Database Schema
-
-Main table:
+## 🗄️ Database Schema
 
 ```sql
 CREATE TABLE aqi_data (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    city VARCHAR(100),
-    aqi FLOAT,
-    pm25 FLOAT,
-    pm10 FLOAT,
-    no2 FLOAT,
-    o3 FLOAT,
-    so2 FLOAT,
-    co FLOAT,
+    id        INT AUTO_INCREMENT PRIMARY KEY,
+    city      VARCHAR(100),
+    aqi       FLOAT,
+    pm25      FLOAT,
+    pm10      FLOAT,
+    no2       FLOAT,
+    o3        FLOAT,
+    so2       FLOAT,
+    co        FLOAT,
     timestamp DATETIME
 );
 ```
 
 ---
 
-# 📊 Power BI Dashboard Features
+## 📊 Power BI Dashboard
 
-## Page 1 — Live AQI Monitoring Dashboard
+The Power BI dashboard (`powerbi_dashboard.pbix`) provides rich interactive visualizations connected directly to the MySQL database.
 
-### Features
-
-* Average AQI KPI
-* Maximum AQI KPI
-* Total Cities Monitored
-* Average PM2.5 KPI
-* Top polluted cities visualization
-* Pollutant comparison chart
-* AQI trend over time
+### Page 1 — Live AQI Monitoring
+* Avg AQI, Max AQI, Total Cities, Avg PM2.5 KPI cards
+* Top 10 polluted cities horizontal bar chart (color-coded by severity)
+* Pollutant comparison grouped bar chart (PM2.5, PM10, NO2)
+* AQI trend over time line chart
 * Interactive city slicer
 
-### Insights
+### Page 2 — Pollution Pattern Analysis
+* AQI severity distribution donut chart (Good / Moderate / Poor / Very Poor / Severe)
+* City-wise pollutant intensity heatmap table
+* Hourly AQI pattern line chart
+* Automated key insights panel
+* Last data refresh timestamp
 
-* Identifies highly polluted cities
-* Tracks AQI fluctuations over time
-* Highlights dominant pollutants
-* Provides real-time monitoring capability
+### Dashboard Preview
 
----
-
-## Page 2 — Pollution Pattern Analysis
-
-### Features
-
-* AQI severity distribution donut chart
-* City-wise pollutant heatmap
-* Hourly AQI pattern analysis
-* Automated insights section
-* Latest data refresh timestamp
-
-### Insights
-
-* Detects pollution intensity patterns
-* Identifies dominant pollutants by city
-* Analyzes hourly AQI behavior
-* Visualizes AQI severity distribution
-
----
-
-# 🤖 Automation Setup
-
-The pipeline is automated using:
-
-* Windows Task Scheduler
-* Batch script (`run.bat`)
-
-The scheduler periodically:
-
-1. Activates the virtual environment
-2. Runs the Python ETL pipeline
-3. Logs execution details into `pipeline_logs.txt`
-
----
-
-# ▶️ How to Run the Project
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/live_aqi_analytics.git
-cd live_aqi_analytics
-```
-
----
-
-## 2. Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
----
-
-## 3. Activate Environment
-
-### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
----
-
-## 4. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 5. Configure Environment Variables
-
-Create a `.env` file:
-
-```env
-MYSQL_HOST=localhost
-MYSQL_USER=root
-MYSQL_PASSWORD=your_password
-MYSQL_DATABASE=aqi_db
-```
-
----
-
-## 6. Create Database
-
-Run:
-
-```sql
-source schema.sql;
-```
-
----
-
-## 7. Run Pipeline
-
-```bash
-python main.py
-```
-
----
-
-# 🧠 Skills Demonstrated
-
-This project demonstrates:
-
-* Python programming
-* ETL pipeline development
-* REST API integration
-* Data transformation with Pandas
-* MySQL database management
-* Power BI dashboard development
-* Data visualization
-* Automation scripting
-* Analytical storytelling
-* End-to-end analytics workflow
-
----
-
-# 📸 Dashboard Preview
-
-## Page 1 — Live AQI Monitoring Dashboard
+#### Page 1 — Live AQI Monitoring
 
 ![Dashboard 1](assets/monitoring_overview.png)
 
----
-
-## Page 2 — Pollution Pattern Analysis
+#### Page 2 — Pollution Pattern Analysis
 
 ![Dashboard 2](assets/pattern_exploration.png)
 
 ---
 
-# 👨‍💻 Author
+## 🌐 Streamlit Live Dashboard
 
-**Rajan**
+Since Power BI requires a Pro license for public sharing, the dashboard was also rebuilt using **Streamlit + Plotly** and deployed publicly on Streamlit Cloud — connected to the same cloud MySQL database on Railway.
 
-Aspiring Data Analyst passionate about:
+🔗 **[live-aqi-analytics.streamlit.app](https://live-aqi-analytics.streamlit.app)**
 
-* Data Analytics
-* Data Visualization
-* Automation
-* Environmental Data Analysis
-* Business Intelligence
+### Features
+* Identical layout and insights to the Power BI dashboard
+* Fully interactive — city filter, hover tooltips, live data
+* Publicly accessible — no login required
+* Auto-refreshes data every 5 minutes
 
 ---
 
-# ⭐ If you found this project useful
+## 🤖 Automation Setup
 
-Consider starring the repository and sharing feedback.
+The pipeline is automated using Windows Task Scheduler + a batch script (`run.bat`):
+
+1. Activates the virtual environment
+2. Runs the Python ETL pipeline
+3. Logs execution into `pipeline_logs.txt`
+
+---
+
+## ▶️ How to Run Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/rajanshaky/live-aqi-analytics.git
+cd live-aqi-analytics
+```
+
+### 2. Create & Activate Virtual Environment
+```bash
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+Create a `.env` file:
+```env
+MYSQL_HOST=your_host
+MYSQL_PORT=3306
+MYSQL_USER=your_user
+MYSQL_PASSWORD=your_password
+MYSQL_DATABASE=your_database
+OPENAQ_API_KEY=your_api_key
+```
+
+### 5. Run the Pipeline
+```bash
+python main.py
+```
+
+### 6. Launch the Streamlit Dashboard
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧠 Skills Demonstrated
+
+* Python programming & REST API integration
+* ETL pipeline development
+* Data transformation with Pandas
+* Cloud MySQL database management (Railway)
+* Power BI dashboard development
+* Interactive dashboard development (Streamlit + Plotly)
+* Cloud deployment (Streamlit Cloud)
+* Automation scripting
+* End-to-end analytics workflow
+
+---
+
+## 👨‍💻 Author
+
+**Rajan Shaky**
+Aspiring Data Analyst | Python • SQL • Power BI • Streamlit
+
+[![GitHub](https://img.shields.io/badge/GitHub-rajanshaky-black)](https://github.com/rajanshaky)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/rajanshaky)
+
+---
+
+⭐ If you found this project useful, consider starring the repository!

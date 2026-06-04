@@ -33,3 +33,5 @@ logs/
 
 # MySQL dumps
 *.sql.zip
+
+aqi_dump.sql
