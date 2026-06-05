@@ -181,13 +181,16 @@ def get_connection():
         user=os.getenv('RAILWAY_MYSQL_USER'),
         password=os.getenv('RAILWAY_MYSQL_PASSWORD'),
         database=os.getenv('RAILWAY_MYSQL_DATABASE'),
-        use_pure=True
+        use_pure=True,
+        connection_timeout=10
     )
 
 @st.cache_data(ttl=300)
 def load_data():
     try:
         conn = get_connection()
+        # Ping to check if connection is alive, reconnect if not
+        conn.ping(reconnect=True, attempts=3, delay=2)
         query = "SELECT city, aqi, pm25, pm10, o3, no2, so2, co, timestamp FROM aqi_data"
         df = pd.read_sql(query, conn)
         df['timestamp'] = pd.to_datetime(df['timestamp'])
